@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.4",
+  "uuid": "fbffe221-3413-4c0d-a891-5f2c7a86c717",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 334,
+  "height": 768,
+  "platformSettings": {},
+  "subMetas": {
+    "scifi_tileset_02": {
+      "ver": "1.0.4",
+      "uuid": "ea52639a-3848-45b1-809d-38fdd85bb4f4",
+      "rawTextureUuid": "fbffe221-3413-4c0d-a891-5f2c7a86c717",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -7,
+      "offsetY": 3.5,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 320,
+      "height": 761,
+      "rawWidth": 334,
+      "rawHeight": 768,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,144 @@
+
+ /* === range theme and appearance === */
+ .setting_box input[type="range"] {
+     font-size: 1.5rem;
+     width: 600px;
+ }
+ 
+ .setting_box input[type="range"] {
+     color: rgb(64 226 255);
+     --thumb-height: 1.125em;
+     --track-height: 0.125em;
+     --track-color: rgba(255 255 255);
+     --brightness-hover: 180%;
+     --brightness-down: 80%;
+     --clip-edges: 0.125em;
+ }
+ 
+ /* === range commons === */
+ .setting_box input[type="range"] {
+     position: relative;
+     background: #fff0;
+     overflow: hidden;
+ }
+ 
+ .setting_box input[type="range"]:active {
+     cursor: grabbing;
+ }
+ 
+ /* === WebKit specific styles === */
+ .setting_box input[type="range"],
+ .setting_box input[type="range"]::-webkit-slider-runnable-track,
+ .setting_box input[type="range"]::-webkit-slider-thumb {
+     -webkit-appearance: none;
+     transition: all ease 100ms;
+     height: var(--thumb-height);
+ }
+ 
+ .setting_box input[type="range"]::-webkit-slider-runnable-track,
+ .setting_box input[type="range"]::-webkit-slider-thumb {
+     position: relative;
+ }
+ 
+ .setting_box input[type="range"]::-webkit-slider-thumb {
+     --thumb-radius: calc((var(--thumb-height) * 0.5) - 1px);
+     --clip-top: calc((var(--thumb-height) - var(--track-height)) * 0.5 - 0.5px);
+     --clip-bottom: calc(var(--thumb-height) - var(--clip-top));
+     --clip-further: calc(100% + 1px);
+     --box-fill: calc(-100vmax - var(--thumb-width, var(--thumb-height))) 0 0
+         100vmax currentColor;
+ 
+     width: var(--thumb-width, var(--thumb-height));
+     background: linear-gradient(currentColor 0 0) scroll no-repeat left center /
+         50% calc(var(--track-height) + 1px);
+     background-color: currentColor;
+     box-shadow: var(--box-fill);
+     border-radius: var(--thumb-width, var(--thumb-height));
+ 
+     filter: brightness(100%);
+     clip-path: polygon(
+         100% -1px,
+         var(--clip-edges) -1px,
+         0 var(--clip-top),
+         -100vmax var(--clip-top),
+         -100vmax var(--clip-bottom),
+         0 var(--clip-bottom),
+         var(--clip-edges) 100%,
+         var(--clip-further) var(--clip-further)
+     );
+ }
+/*  
+ input[type="range"]:hover::-webkit-slider-thumb {
+     filter: brightness(var(--brightness-hover));
+     cursor: grab;
+ } */
+ 
+ .setting_box input[type="range"]:active::-webkit-slider-thumb {
+     cursor: grabbing;
+ }
+ 
+ .setting_box input[type="range"]::-webkit-slider-runnable-track {
+     background: linear-gradient(var(--track-color) 0 0) scroll no-repeat center /
+         100% calc(var(--track-height) + 1px);
+ }
+ 
+ /* === Firefox specific styles === */
+ .setting_box input[type="range"],
+ .setting_box input[type="range"]::-moz-range-track,
+ .setting_box input[type="range"]::-moz-range-thumb {
+     appearance: none;
+     transition: all ease 100ms;
+     height: var(--thumb-height);
+ }
+ 
+ .setting_box input[type="range"]::-moz-range-track,
+ .setting_box input[type="range"]::-moz-range-thumb,
+ .setting_box input[type="range"]::-moz-range-progress {
+     background: #fff0;
+ }
+ 
+ .setting_box input[type="range"]::-moz-range-thumb {
+     background: currentColor;
+     border: 0;
+     width: var(--thumb-width, var(--thumb-height));
+     border-radius: var(--thumb-width, var(--thumb-height));
+     cursor: grab;
+ }
+ 
+ .setting_box input[type="range"]:active::-moz-range-thumb {
+     cursor: grabbing;
+ }
+ 
+ .setting_box input[type="range"]::-moz-range-track {
+     width: 100%;
+     background: var(--track-color);
+ }
+ 
+ .setting_box input[type="range"]::-moz-range-progress {
+     appearance: none;
+     background: currentColor;
+     transition-delay: 30ms;
+ }
+ 
+ .setting_box input[type="range"]::-moz-range-track,
+ .setting_box input[type="range"]::-moz-range-progress {
+     height: calc(var(--track-height) + 1px);
+     border-radius: var(--track-height);
+ }
+ 
+ .setting_box input[type="range"]:disabled::-moz-range-thumb {
+     cursor: not-allowed;
+ }
+
+.radio-custom {
+    display: inline-block;
+    width: 48px; 
+    height: 48px; 
+    background-image: url('/img/login/slect_off.png'); 
+    cursor: pointer;
+}
+
+input[type="checkBox"]:checked + .radio-custom {
+    background-image: url('/img/login/slect_on.png'); 
+}
+ 

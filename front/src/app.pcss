@@ -1,0 +1,51 @@
+/* Write your global styles here, in PostCSS syntax */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+	font-family: 'Sebang'; 
+	src: url('/font/SEBANG_Gothic_OTF.otf') format('opentype'); 
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Pretendard-Regular';
+	src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff')
+		format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+/* :root에서 폰트 패밀리 변수 업데이트 */
+:root {
+	--global-font-family: 'Sebang', sans-serif; 
+	--adm-font-family: 'Pretendard-Regular', sans-serif;
+}
+
+
+
+html > body {
+	font-family: var(--global-font-family);
+	word-break: keep-all;
+}
+
+
+/* 토스트 UI 에디터에 폰트 적용 */
+html > body .ProseMirror,
+html > body .toastui-editor-contents,
+html > body .toastui-editor-defaultUI {
+	font-family: var(--base-font-family);
+	font-size: 1rem;
+}
+
+/* 토스틀 */
+html > body #toast-container .toast {
+	white-space: normal;
+}
+
+.adm-area {
+    font-family: var(--adm-font-family);
+}

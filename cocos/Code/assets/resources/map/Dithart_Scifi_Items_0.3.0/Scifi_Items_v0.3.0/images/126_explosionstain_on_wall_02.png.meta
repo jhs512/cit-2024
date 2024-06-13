@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.4",
+  "uuid": "510cd543-a1f3-48c4-912f-d3d4cb741533",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 32,
+  "height": 32,
+  "platformSettings": {},
+  "subMetas": {
+    "126_explosionstain_on_wall_02": {
+      "ver": "1.0.4",
+      "uuid": "11f28bbb-4447-48f1-970a-7800171f8962",
+      "rawTextureUuid": "510cd543-a1f3-48c4-912f-d3d4cb741533",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 32,
+      "height": 32,
+      "rawWidth": 32,
+      "rawHeight": 32,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,76 @@
+HELP.md
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+### Other ###
+db_dev.mv.db
+db_dev.trace.db
+application-secrets.yml
+
+
+# Cocos Creator
+library/
+temp/
+local/
+settings/
+remote-downloads/
+build/
+*.log
+*.bak
+*.map
+*.pid
+*.tsbuildinfo
+*.sln
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+[Bb]in/
+[Dd]ebug/
+[Ii]ntermediate/
+[Pp]ackages/
+[Rr]elease/
+test-results/
+.vscode/
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+node_modules/

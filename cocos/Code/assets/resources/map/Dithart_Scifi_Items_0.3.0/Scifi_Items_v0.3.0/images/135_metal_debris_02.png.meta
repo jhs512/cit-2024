@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.4",
+  "uuid": "4d9c1161-9df4-44c2-9150-f9661c947564",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 32,
+  "height": 32,
+  "platformSettings": {},
+  "subMetas": {
+    "135_metal_debris_02": {
+      "ver": "1.0.4",
+      "uuid": "0cc7cf00-06e6-40e5-9083-ef6a24f70752",
+      "rawTextureUuid": "4d9c1161-9df4-44c2-9150-f9661c947564",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 1,
+      "offsetY": 0,
+      "trimX": 3,
+      "trimY": 1,
+      "width": 28,
+      "height": 30,
+      "rawWidth": 32,
+      "rawHeight": 32,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

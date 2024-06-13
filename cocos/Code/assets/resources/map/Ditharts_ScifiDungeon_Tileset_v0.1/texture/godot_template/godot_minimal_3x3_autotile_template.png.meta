@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.4",
+  "uuid": "55757c46-f97b-419b-9210-d1a4aaa9432c",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 384,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "godot_minimal_3x3_autotile_template": {
+      "ver": "1.0.4",
+      "uuid": "f94f77dd-ce8c-4675-8212-0d8811484062",
+      "rawTextureUuid": "55757c46-f97b-419b-9210-d1a4aaa9432c",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 384,
+      "height": 128,
+      "rawWidth": 384,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

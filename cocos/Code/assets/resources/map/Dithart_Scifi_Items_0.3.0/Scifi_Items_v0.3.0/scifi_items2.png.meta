@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.4",
+  "uuid": "32085251-71ed-46a7-ab87-4291afa8a192",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 256,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "scifi_items2": {
+      "ver": "1.0.4",
+      "uuid": "c624e48f-1a92-4687-b343-d16450a0ed80",
+      "rawTextureUuid": "32085251-71ed-46a7-ab87-4291afa8a192",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0.5,
+      "trimX": 4,
+      "trimY": 0,
+      "width": 247,
+      "height": 127,
+      "rawWidth": 256,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

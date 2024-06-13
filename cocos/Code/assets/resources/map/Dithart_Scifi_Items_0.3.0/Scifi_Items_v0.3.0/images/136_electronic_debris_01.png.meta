@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.4",
+  "uuid": "756ab3d4-985c-47f0-bebb-24614ed9b723",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 32,
+  "height": 32,
+  "platformSettings": {},
+  "subMetas": {
+    "136_electronic_debris_01": {
+      "ver": "1.0.4",
+      "uuid": "146c5ebe-bc97-4148-b581-ba9283511067",
+      "rawTextureUuid": "756ab3d4-985c-47f0-bebb-24614ed9b723",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0.5,
+      "offsetY": -0.5,
+      "trimX": 3,
+      "trimY": 6,
+      "width": 27,
+      "height": 21,
+      "rawWidth": 32,
+      "rawHeight": 32,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

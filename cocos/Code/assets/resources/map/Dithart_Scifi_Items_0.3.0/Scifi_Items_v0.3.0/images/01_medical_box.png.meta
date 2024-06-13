@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.4",
+  "uuid": "57dfdeff-f6c1-477a-80d4-f69225eb80ef",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 32,
+  "height": 32,
+  "platformSettings": {},
+  "subMetas": {
+    "01_medical_box": {
+      "ver": "1.0.4",
+      "uuid": "98f4d9df-71f8-40f1-a811-1facbefc8969",
+      "rawTextureUuid": "57dfdeff-f6c1-477a-80d4-f69225eb80ef",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 1.5,
+      "offsetY": 0.5,
+      "trimX": 5,
+      "trimY": 2,
+      "width": 25,
+      "height": 27,
+      "rawWidth": 32,
+      "rawHeight": 32,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

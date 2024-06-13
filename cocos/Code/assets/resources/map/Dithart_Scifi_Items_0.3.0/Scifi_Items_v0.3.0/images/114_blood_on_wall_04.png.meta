@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.4",
+  "uuid": "34b40669-80e1-4986-903e-b591e18d8c32",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 32,
+  "height": 32,
+  "platformSettings": {},
+  "subMetas": {
+    "114_blood_on_wall_04": {
+      "ver": "1.0.4",
+      "uuid": "8938f842-f68c-4687-90ca-5ae851772e2e",
+      "rawTextureUuid": "34b40669-80e1-4986-903e-b591e18d8c32",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 1.5,
+      "offsetY": -3,
+      "trimX": 6,
+      "trimY": 8,
+      "width": 23,
+      "height": 22,
+      "rawWidth": 32,
+      "rawHeight": 32,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.4",
+  "uuid": "2dc80eeb-095a-456f-97e4-9144ceacd5fc",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 384,
+  "height": 1152,
+  "platformSettings": {},
+  "subMetas": {
+    "scifi_dungeon_02_48x48": {
+      "ver": "1.0.4",
+      "uuid": "320de23b-91d7-4951-9552-e8e271fc8426",
+      "rawTextureUuid": "2dc80eeb-095a-456f-97e4-9144ceacd5fc",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 384,
+      "height": 1152,
+      "rawWidth": 384,
+      "rawHeight": 1152,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.4",
+  "uuid": "aa865c85-edb1-49a7-ba5b-bffb45c25b49",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 32,
+  "height": 32,
+  "platformSettings": {},
+  "subMetas": {
+    "19_liquidtank_top_03": {
+      "ver": "1.0.4",
+      "uuid": "65c95865-0505-475e-9da5-51064e5d01de",
+      "rawTextureUuid": "aa865c85-edb1-49a7-ba5b-bffb45c25b49",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": -5,
+      "trimX": 3,
+      "trimY": 10,
+      "width": 26,
+      "height": 22,
+      "rawWidth": 32,
+      "rawHeight": 32,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

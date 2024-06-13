@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.4",
+  "uuid": "653a1c68-8b1f-4108-b69b-c2523525a47f",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 32,
+  "height": 32,
+  "platformSettings": {},
+  "subMetas": {
+    "05_weaponbox_with_energycells": {
+      "ver": "1.0.4",
+      "uuid": "6fd741e1-d7b9-49e0-bd86-e48edff13c64",
+      "rawTextureUuid": "653a1c68-8b1f-4108-b69b-c2523525a47f",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 1,
+      "offsetY": 0,
+      "trimX": 5,
+      "trimY": 4,
+      "width": 24,
+      "height": 24,
+      "rawWidth": 32,
+      "rawHeight": 32,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

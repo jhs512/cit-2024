@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.4",
+  "uuid": "5318c3f2-885e-49eb-b795-ebdd0dd88640",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 32,
+  "height": 32,
+  "platformSettings": {},
+  "subMetas": {
+    "108_blood_on_floor_06": {
+      "ver": "1.0.4",
+      "uuid": "37de4c6a-a657-4f95-bf60-095aaf081864",
+      "rawTextureUuid": "5318c3f2-885e-49eb-b795-ebdd0dd88640",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 2,
+      "offsetY": 2.5,
+      "trimX": 4,
+      "trimY": 0,
+      "width": 28,
+      "height": 27,
+      "rawWidth": 32,
+      "rawHeight": 32,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

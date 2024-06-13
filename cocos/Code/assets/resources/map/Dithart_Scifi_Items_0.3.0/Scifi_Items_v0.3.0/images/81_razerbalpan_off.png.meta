@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.4",
+  "uuid": "380dd945-4faf-498a-a95d-fd61d64c473e",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 64,
+  "height": 34,
+  "platformSettings": {},
+  "subMetas": {
+    "81_razerbalpan_off": {
+      "ver": "1.0.4",
+      "uuid": "6ea0552c-87ef-4536-afb1-560e9d111fa8",
+      "rawTextureUuid": "380dd945-4faf-498a-a95d-fd61d64c473e",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 18,
+      "trimY": 2,
+      "width": 28,
+      "height": 30,
+      "rawWidth": 64,
+      "rawHeight": 34,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

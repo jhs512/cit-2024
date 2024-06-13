@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.4",
+  "uuid": "523a5ad1-ad05-4ce6-aab8-0b0f123d82ed",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 32,
+  "height": 32,
+  "platformSettings": {},
+  "subMetas": {
+    "04_weaponbox_with_gun": {
+      "ver": "1.0.4",
+      "uuid": "5d4367d9-7f0e-4bf9-bc10-f1f3b17097b6",
+      "rawTextureUuid": "523a5ad1-ad05-4ce6-aab8-0b0f123d82ed",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 1.5,
+      "offsetY": 0.5,
+      "trimX": 3,
+      "trimY": 2,
+      "width": 29,
+      "height": 27,
+      "rawWidth": 32,
+      "rawHeight": 32,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,494 @@
+.command-guide::-webkit-scrollbar {
+  /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
+  background-color: unset;
+  border-radius: 0px;
+}
+
+.command-guide::-webkit-scrollbar-track {
+  width: 10px;
+  background-color: unset;
+}
+
+.command-guide::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgb(64 226 255);
+  
+}
+
+.guide-btn:hover {
+  transform:scale(1.2);
+  cursor: pointer;
+}
+
+#Cocos2dGameContainer, #GameCanvas {
+  max-width:100% !important;
+  max-height: 100% !important;
+}
+
+@keyframes shrinkAndMoveFromRight {
+  from {
+      transform: scale(20) translate(0, 0);
+      opacity: 0;
+  }
+  to {
+      transform: scale(1) translate(0, 0);
+      opacity: 1;
+  }
+}
+
+@keyframes zoomInAndOut {
+  0%, 100% {
+  transform: scale(0.9); 
+  opacity: 1; 
+  }
+  50% {
+  transform: scale(1.0); 
+  opacity: 0.8; 
+  }
+}
+
+@keyframes zoomInAndOut2 {
+  0%, 100% {
+  transform: scale(1.5) scale(1.0); 
+  opacity: 1; 
+  }
+  50% {
+  transform: scale(1.5) scale(1.4); 
+  opacity: 0.8; 
+  }
+}
+
+.btnGUideNext {
+  animation: zoomInAndOut2 2s infinite 1s;
+}
+
+.animatedHighlighter {
+  animation: shrinkAndMoveFromRight 1s forwards, zoomInAndOut 2s infinite 1s;
+}
+
+/* 커서 깜빡임 효과 */
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+#typing {
+  white-space: nowrap;
+  overflow: hidden; /* 글자가 div를 넘어가지 않도록 */
+  animation: blink 0.75s step-end infinite; /* 커서 깜빡임 애니메이션 */
+}
+
+@keyframes slideInTop {
+  0% {
+      max-height: 0;
+      opacity: 0;
+      padding: 0; 
+      clip-path: inset(0 0 100% 0);
+  }
+  100% {
+      max-height: 400px;
+      opacity: 1;
+      clip-path: inset(0 0 0 0);
+  }
+}
+
+.scanning-effect {
+  animation: slideInTop 0.8s linear forwards;
+}
+
+@keyframes slideOutBottom {
+  0% {
+      max-height: 400px;
+      opacity: 1;
+      clip-path: inset(0 0 0 0);
+  }
+  100% {
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden; 
+      clip-path: inset(0 0 100% 0);
+  }
+}
+
+.reverse-scanning-effect {
+  animation: slideOutBottom 0.8s linear forwards;
+}
+
+@keyframes starAnimation {
+  0% {
+    transform: translateX(-100px) scale(6); /* 시작 위치와 크기 */
+    opacity: 0;
+  }
+  50% {
+    opacity: 1; /* 중간에 별이 완전히 보이도록 함 */
+  }
+  100% {
+    transform: translateX(0) scale(1); /* 최종 위치와 크기 */
+    opacity: 1;
+  }
+}
+
+/* 각 별에 애니메이션 적용 */
+#star1 {
+  opacity: 0;
+  animation: starAnimation .4s ease forwards 0.5s;
+}
+
+#star2 {
+  opacity: 0;
+  animation: starAnimation .4s ease forwards 1s;
+}
+
+#star3 {
+  opacity: 0;
+  animation: starAnimation .4s ease forwards 1.5s;
+}
+
+#star4 {
+  opacity: 0;
+  animation: starAnimation .4s ease forwards 2s;
+}
+
+
+.scale-up-on-hover {
+  transition: transform 0.2s ease-in-out; 
+  display: inline-block; 
+}
+
+.scale-up-on-hover:hover {
+  transform: scale(1.2); 
+}
+
+/* 체력바 css */
+
+#health-bar {
+  box-sizing: border-box;
+  padding: 5px;
+  background: #ddd;
+  border-radius: 5px;
+  position: relative;
+}
+
+.bar {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: width .5s linear, background-color .5s ease;
+}
+
+.foreground-bar {
+  background: #46b446;
+  z-index: 2; 
+}
+
+.background-bar {
+  background: rgba(197, 84, 84, 0.6);
+  z-index: 1; 
+  transition-delay: .5s; 
+}
+
+.green-bar {
+  background: #f89421; /* 초록색 */
+}
+
+.yellow-bar {
+  background: rgb(221, 38, 10); /* 노란색 */
+}
+
+dialog::backdrop { /* modal back layer */
+  background-color: unset !important;
+  pointer-events: none;
+}
+
+
+
+/* @keyframes scan {
+    0% {
+        clip-path: inset(0 0 100% 0);
+    }
+    100% {
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+.scanning-effect {
+    animation: scan 0.4s linear forwards;
+}
+
+@keyframes reverseScan {
+    0% {
+        clip-path: inset(0 0 0 0);
+    }
+    100% {
+        clip-path: inset(0 0 100% 0);
+        display: none;
+    }
+}
+
+.reverse-scanning-effect {
+    animation: reverseScan 0.4s linear forwards;
+} */
+
+.rotated-input {
+      transform: rotate(270deg);
+  }
+
+:root {
+--base-color: #71c8f1;
+--background-color: #181818;
+--border-color: #242424;
+}
+
+legend {
+font-size: 1.8em;
+font-family: "Lobster", sans-serif;
+padding-left: .3em;
+padding-right: .2em;
+color: #ACE;
+text-shadow: 
+  -.125em .05em 0 #214893,
+  -.25em .1em 0 #313131;
+}
+
+#myRange::-webkit-slider-thumb,
+#myRange::-moz-range-thumb,
+#myRange::-ms-thumb {
+  cursor: ns-resize;
+  margin: 4.5em -4.5em;
+  display: inline-block;
+}
+
+/* Slider */
+#myRange {
+display: block;
+margin: 0; padding: 0;
+font-size: inherit;
+width: 6em; height: 2em;
+border-radius: .25em;
+border: .2em solid var(--border-color);
+background-color: var(--border-color);
+background-size: 100% 100%;
+background-repeat: no-repeat;
+overflow: hidden;
+cursor: pointer;
+transition: box-shadow .2s linear;
+box-shadow: 0 0 0 0 transparent;
+}
+
+/* input[type='range']:focus { 
+box-shadow: 0 0 0 .1em  #AAAAAA; 
+}
+
+input[type='range']:hover { 
+box-shadow: 0 0 0 .15em #6FC5F0; 
+} */
+
+/* Slider::-track */
+#myRange::-webkit-slider-runnable-track,
+#myRange::-moz-range-track,
+#myRange::-ms-track {
+border: none;
+background: none;
+height: 100%;
+width: 100%;
+}
+
+/* Slider::-thumb */
+#myRange::-webkit-slider-thumb,
+#myRange::-moz-range-thumb,
+#myRange::-ms-thumb {
+margin: .05em; padding: 0;
+height: .9em; width: .9em;
+border-radius: .1em;
+box-sizing: border-box;
+border: none;
+background-color: #6FC5F0;
+cursor: ew-resize;
+}
+
+/* Browser tweaks */
+/* webkit */
+#myRange,
+#myRange::-webkit-slider-runnable-track, 
+#myRange::-webkit-slider-thumb {
+-webkit-appearance: none;
+}
+
+/* IE */
+#myRange::-ms-track {
+color: transparent;
+}
+#myRange::-ms-fill-lower, 
+#myRange::-ms-fill-upper, 
+#myRange::-ms-tooltip {
+display: none;
+}
+
+#myRange::-webkit-slider-thumb {
+margin: .05em; 
+padding: 0;
+height: 2.9em; 
+width: .9em;
+border-radius: .1em;
+box-sizing: border-box;
+border: none;
+background-color: #6FC5F0;
+box-shadow:
+  -10em 0 0 0 #313131, -9em 0 0 0 #313131,
+  -8em 0 0 0 #2F343F, -7em 0 0 0 #283F6B,
+  -6em 0 0 0 #214893, -5em 0 0 0 #1A52BC,
+  -4em 0 0 0 #2769D3, -3em 0 0 0 #3E87DC,
+  -2em 0 0 0 #55A5E6, -1em 0 0 0 #6FC5F0,
+
+  1em 0 0 0 var(--background-color), 2em 0 0 0 var(--background-color),
+  3em 0 0 0 var(--background-color), 4em 0 0 0 var(--background-color),
+  5em 0 0 0 var(--background-color), 6em 0 0 0 var(--background-color),
+  7em 0 0 0 var(--background-color), 8em 0 0 0 var(--background-color),
+  9em 0 0 0 var(--background-color);
+cursor: pointer;
+}
+
+.editorErrorHighlighter { /* 에디터 에러 하이라이터 */
+  position: absolute;
+  background-color: unset;
+  border: solid 3px red;
+  border-radius: 2px;
+}
+
+.editorHighlighter { /* 에디터 하이라이터 */
+  position: absolute;
+  background-color: unset;
+  border: solid 3px white;
+  border-radius: 2px;
+}
+
+.ace_editor .ace_bracket {
+  border: none !important;
+  background: none !important;
+}
+
+.ace_mobile-button {
+  display: none;
+}
+
+.ace_editor { /* 에디터 백그라운드 */
+  background-color: unset;
+  font-weight: 900;
+  /* font-family:'raleway', sans-serif !important; */
+  /* font-family: var(--global-font-family) !important; */
+
+  .ace_support.ace_function { /* 에디터 "range", "set" 글자 */
+    color: rgb(255 210 87);
+  }
+
+  .ace_paren { /* 에디터 괄호 글자 */
+    color: rgb(255 210 87);
+  }
+
+  .ace_identifier { /* 에디터 "go", "turnLeft", "turnRight", "i" */
+    color: rgb(28 211 216);
+  }
+
+  .ace_punctuation { /* 에디터 ":" */
+    color: rgb(255 210 87);
+  }
+
+  .ace_constant.ace_numeric { /* 에디터 숫자 */
+    color: rgb(28 211 216);
+  }
+
+  .ace_string { /* 에디터 문자열 글자 */
+    color: white;
+  }
+
+  .ace_comment { /* 에디터 주석 글자 */
+    color: rgb(177, 177, 177);
+  }
+
+  .ace_cursor { /* 에디터 커서 */
+    border-color: white
+  }
+  
+  .ace_keyword {
+    color: rgb(255 210 87);
+  }
+
+  .ace_cjk { /* 에디터 한글 글자 그치만 주석에 한글도 같이 바뀜 */
+    /* font-family: "Noto Sans KR", sans-serif; */
+  }
+
+  .ace_gutter { /* 에디터 좌측 거터 */
+    background-color: unset;
+    color: white;
+    font-size: 25px;
+    font-weight: 900;
+    text-align: right;
+
+    .ace_gutter-cell {
+      align-items: start !important;
+      justify-content: end !important;
+    }
+
+    .ace_gutter-active-line { /* 거터 > 포커스 중인 라인 */
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      background-color: unset;
+      text-align: right;
+    }
+
+    .ace_gutter-cell {
+      display:flex;
+      align-items: center;
+    }
+
+    .ace_gutter-active-line {
+      background-color: unset; /* 거터 포커스 배경 */
+      color:rgb(28 211 216);
+    }
+
+    
+    /* .ace_gutter-active-line::before {
+      content: ''; 
+      display: inline-block; 
+      margin-right: 8px;
+      width: 0; 
+      height: 0; 
+      border-left: 6px solid transparent; 
+      border-right: 6px solid transparent; 
+      border-bottom: 10px solid rgb(64 226 255); 
+      transform: rotate(90deg); 
+      position: relative; 
+    } */
+  }
+
+  .ace_scrollbar .ace_scrollbar-v {
+  }
+
+  /* 에디터 스크롤 바 시작 */
+  .ace_scrollbar::-webkit-scrollbar {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: unset;
+    border-radius: 0px;
+  }
+
+  .ace_scrollbar::-webkit-scrollbar-track {
+    width: 10px;
+    background-color: unset;
+  }
+
+  .ace_scrollbar::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    /* background-image: -webkit-gradient(linear,
+                      left bottom,
+                      left top,
+                      color-stop(0.44, rgb(122,153,217)),
+                      color-stop(0.72, rgb(73,125,189)),
+                      color-stop(0.86, rgb(28,58,148))); */
+    background-color: rgb(64 226 255);
+    
+  }
+  /* 에디터 스크롤 바 끝 */
+}
