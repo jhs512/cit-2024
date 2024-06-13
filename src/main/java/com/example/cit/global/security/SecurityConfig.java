@@ -31,6 +31,8 @@ public class SecurityConfig {
                                     .requestMatchers("/resource/**")
                                     .permitAll()
                                     .requestMatchers("/h2-console/**")
+                                    .permitAll()
+                                    .requestMatchers("/actuator/**")
                                     .permitAll();
 
 

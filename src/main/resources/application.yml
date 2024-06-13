@@ -29,38 +29,24 @@ spring:
         highlight_sql: true
         use_sql_comments: true
     open-in-view: false
-  security:
-    oauth2:
-      client:
-        registration:
-          kakao:
-            clientId: ON_SECRET
-            scope: profile_nickname, profile_image
-            client-name: Kakao
-            authorization-grant-type: authorization_code
-            redirect-uri: '${custom.site.backUrl}/{action}/oauth2/code/{registrationId}'
-        provider:
-          kakao:
-            authorization-uri: https://kauth.kakao.com/oauth/authorize
-            token-uri: https://kauth.kakao.com/oauth/token
-            user-info-uri: https://kapi.kakao.com/v2/user/me
-            user-name-attribute: id
 logging:
   level:
-    com.ll.exam20240205: DEBUG
+    com.example.cit: DEBUG
     org.hibernate.SQL: DEBUG
     org.hibernate.orm.jdbc.bind: TRACE
     org.hibernate.orm.jdbc.extract: TRACE
     org.springframework.transaction.interceptor: TRACE
+springdoc:
+  default-produces-media-type: application/json
 custom:
   dev:
     cookieDomain: localhost
     frontUrl: "http://${custom.dev.cookieDomain}:5173"
     backUrl: "http://${custom.dev.cookieDomain}:${server.port}"
   prod:
-    cookieDomain: myk.co.kr
-    frontUrl: "https://front.${custom.prod.cookieDomain}"
-    backUrl: "https://cit.${custom.prod.cookieDomain}"
+    cookieDomain: missioncy.co.kr
+    frontUrl: "https://www.${custom.prod.cookieDomain}"
+    backUrl: "https://back.${custom.prod.cookieDomain}"
     database:
       password: NEED_TO_SECRET
     members:

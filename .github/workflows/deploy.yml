@@ -76,13 +76,7 @@ jobs:
           password: ${{ secrets.SERVER_1_SSH_PASSWORD }}
           port: ${{ secrets.SERVER_1_SSH_PORT }}
           script: |
-            docker pull ghcr.io/minyoungkyu/cit:latest
-            docker stop cit_1
-            docker rm cit_1
-            docker run \
-                -p 8021:8080 \
-                -d \
-                -v /docker_projects/cit_1/volume/gen:/gen \
-                --name cit_1 \
-                ghcr.io/minyoungkyu/cit:latest
-            docker image prune
+            mkdir -p /dockerProjects/cit
+            curl -o /dockerProjects/cit/zero_downtime_deploy.py https://raw.githubusercontent.com/jhs512/cit/main/infraScript/zero_downtime_deploy.py
+            chmod +x /dockerProjects/cit/zero_downtime_deploy.py
+            /dockerProjects/cit/zero_downtime_deploy.py
