@@ -77,6 +77,6 @@ jobs:
           port: ${{ secrets.SERVER_1_SSH_PORT }}
           script: |
             mkdir -p /dockerProjects/cit
-            curl -o /dockerProjects/cit/zero_downtime_deploy.py https://raw.githubusercontent.com/jhs512/cit/main/infraScript/zero_downtime_deploy.py
+            curl -o /dockerProjects/cit/zero_downtime_deploy.py https://raw.githubusercontent.com/jhs512/cit-2024/main/infraScript/zero_downtime_deploy.py
             chmod +x /dockerProjects/cit/zero_downtime_deploy.py
             /dockerProjects/cit/zero_downtime_deploy.py
